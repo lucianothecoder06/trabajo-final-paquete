@@ -1,0 +1,13 @@
+[package]
+name = "empaquetado-final"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[package.metadata.deb]
+section = "utils"
+priority = "optional"
+assets = [
+    ["target/release/info-estudiante", "usr/bin/", "755"],
+]
